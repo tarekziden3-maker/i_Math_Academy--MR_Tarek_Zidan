@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>i Math International Math Academy | مستر طارق زيدان</title>
   
+  <!-- وسوم معاينة الروابط (Open Graph) للفيسبوك والواتساب -->
+  <meta property="og:title" content="i Math International Math Academy | مستر طارق زيدان">
+  <meta property="og:description" content="أقوى أكاديمية لتأسيس وتدريس المناهج الدولية واليابانية للرياضيات بأحدث طرق الذكاء الاصطناعي والتكنولوجيا.">
+  <meta property="og:image" content="https://i.postimg.cc/BQF4WNR2/Chat-GPT-Image-Jul-10-2026-06-57-33-PM.png">
+  <meta property="og:url" content="https://i-math-academy.vercel.app">
+  <meta property="og:type" content="website">
+
   <!-- الخطوط والأيقونات -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1498,11 +1505,11 @@
       e.preventDefault();
 
       const name = document.getElementById("jobName").value;
-      const phone = document.getElementById("jobPhone").value;
+      const phone = document.getElementById("jobPhone.value") || document.getElementById("jobPhone").value;
       const wa = document.getElementById("jobWhatsapp").value;
       const dob = document.getElementById("jobDob").value;
       const college = document.getElementById("jobCollege").value;
-      const exp = document.getElementById("jobExp.value").value || document.getElementById("jobExp").value;
+      const exp = document.getElementById("jobExp").value;
       const history = document.getElementById("jobHistory").value;
       const notes = document.getElementById("jobNotes").value || "لا يوجد";
 
@@ -1512,7 +1519,7 @@
       msg += `💬 *رقم الواتساب:* ${wa}%0A`;
       msg += `🎂 *تاريخ الميلاد:* ${dob}%0A`;
       msg += `🎓 *الكلية / المؤهل:* ${college}%0A`;
-      msg += `⏳ *سنوات الخبرة:* ${document.getElementById("jobExp").value} سنوات%0A`;
+      msg += `⏳ *سنوات الخبرة:* ${exp} سنوات%0A`;
       msg += `🏢 *أماكن العمل السابقة:* ${history}%0A`;
       msg += `📝 *ملاحظات:* ${notes}%0A`;
 
